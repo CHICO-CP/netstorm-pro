@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2025 Ghost Developer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+=======================================================================
+
+ETHICAL USE DISCLAIMER:
+
+This software is intended for legitimate security testing, educational purposes,
+and authorized network assessments only. The developer does not condone or
+support any illegal or unauthorized use of this tool. Users are solely
+responsible for ensuring their compliance with all applicable laws and
+regulations.
+
+Authorized use cases include:
+- Security testing on networks you own or have explicit permission to test
+- Educational and research environments
+- Professional penetration testing with proper authorization
+- Academic cybersecurity studies
+
+Prohibited use cases include:
+- Unauthorized testing on networks you don't own
+- Malicious attacks against systems without permission
+- Any illegal activities
+- Military applications without proper authorization
+
+By using this software, you acknowledge that you are solely responsible for
+how it is used and any consequences that may result from its use.
+
+Contact: GitHub: github.com/CHICO-CP | Telegram: @Gh0stDeveloper

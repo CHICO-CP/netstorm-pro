@@ -1,51 +1,185 @@
+# 🌪️ NetStorm Pro - Advanced Network Testing Suite
 
-# 🚀 Python UDP Flood Script (SP - DDoS)
+![NetStorm Pro Banner](./img/netstorm_banner.png)
+![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)
+![License](https://img.shields.io/badge/License-CC--BY--NC--4.0-lightgrey.svg)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-brightgreen.svg)
+![Version](https://img.shields.io/badge/Version-3.0.0-purple.svg)
 
-This script allows you to send bulk UDP packets to a server or device. **Must be used for educational purposes only or on your own devices/networks** for security verification. **Unauthorized use of this script may be illegal.** ⚠️
+**NetStorm Pro** is an advanced multi-protocol network testing suite designed for security professionals and system administrators. It offers comprehensive network analysis and stress testing capabilities with support for multiple targets and attack methods.
 
-## 📜 **How to use the script**
+## 🚀 Key Features
 
-1. Clone or download this repository to your local machine.
-2. Make sure you have Python 3 installed on your system.
-3. Open a terminal and navigate to the script directory.
-4. Run the script with the following command:
+### ⚡ Multi-Protocol Support
+- **UDP Flood**: High-speed UDP packet flooding
+- **TCP SYN Flood**: Half-open connection attacks
+- **HTTP Flood**: HTTP request flooding
+- **DNS Amplification**: DNS amplification attack simulation
+- **Mixed Attacks**: Intelligent combination of multiple methods
 
+### 🎯 Advanced Target Management
+- Single and multiple target support
+- Load targets from text files
+- Automatic target validation
+- Custom ports per target
+
+### 📊 Real-Time Monitoring
+- Live statistics during execution
+- Visual progress bar
+- Real-time performance metrics
+- Detailed post-execution reports
+
+### 🔧 Technical Features
+- High-performance multi-threaded architecture
+- Dynamic payload system
+- Elegant error handling
+- Colored terminal interface
+
+## 📦 Installation
+
+### System Requirements
+- Python 3.6 or higher
+- Operating System: Linux, Windows, or macOS
+- Appropriate network permissions
+
+### Quick Installation
 ```bash
-python3 SP-DDoS.py <IP> <PORT> <TIME> <THREADS>
+# Clone the repository
+git clone https://github.com/CHICO-CP/netstorm-pro.git
+cd netstorm-pro
+
+# Run directly
+python3 netstorm_pro.py --help
 ```
 
-- `<IP>`: Target IP address (for example: `192.168.1.1`).
-- `<PORT>`: Target port number (for example: `80`).
-- `<TIME>`: Attack duration in seconds (for example: `60`).
-- `<THREADS>`: Number of threads to run concurrently.
+# 🛠️ Basic Usage
 
-### Example:
+### Comprehensive Help
+
 ```bash
-python3 SP-DDoS.py 192.168.1.1 80 60 5
+python3 netstorm_pro.py --help
 ```
 
-## ⚙️ **Prerequisites**
+### Single Target Attack
 
-This script uses only standard Python libraries, so you don't need to install additional dependencies.
-
-### Verify that you have Python 3 installed
 ```bash
-python3 --version
+# Basic UDP Flood
+python3 netstorm_pro.py -t 192.168.1.1 -p 80 -d 60 -th 20 -m udp_flood
+
+# Advanced HTTP Flood
+python3 netstorm_pro.py -t example.com -p 443 -d 120 -th 50 -m http_flood
+
+# Mixed Attack
+python3 netstorm_pro.py -t target.com -p 53 -d 300 -th 100 -m mixed
 ```
 
-If it is not installed, download it from [python.org](https://www.python.org/).
+### Multi-Target Attacks
 
+```bash
+# From targets file
+python3 netstorm_pro.py -f targets.txt -p 80 -d 180 -th 30 -m tcp_syn
+```
 
-## ⚠️ **Legal Notice**
+# 📁 Targets File Format
 
-Using this script to attack networks or devices without authorization is illegal and can result in serious consequences, including legal and criminal penalties. **Use it only on your own devices or networks with the appropriate permission.** The creator of this script is not responsible for any misuse of it.
+Create a targets.txt file with the following format:
 
-## 📝 **Final note**
+```
+# Comments with #
+192.168.1.1
+example.com
+10.0.0.5:8080
+google.com:443
+target-domain.com:21
+```
 
-This script was developed for educational purposes and for legitimate security testing. Use it responsibly! 🌟
+## 🎯 Available Attack Methods
 
-## 🧑🏻‍💻 **Developer**
+| Method | Description | Use Cases |
+|--------|-------------|-----------|
+| `udp_flood` | High-speed UDP flooding | Bandwidth testing |
+| `tcp_syn` | TCP half-open connection flood | Web server testing |
+| `http_flood` | HTTP request flooding | Web application testing |
+| `dns_amp` | DNS amplification simulation | DNS server testing |
+| `mixed` | Multiple method combination | Comprehensive resilience testing |
 
-[SP-FUCKER](https://t.me/Gh0stDeveloper)
-[CHANNEL](https://t.me/GhostDeveloperSpy)
-[GITHUB](https://github.com/CHICO-CP)
+## 📊 Statistics and Metrics
+
+NetStorm Pro provides real-time metrics during execution:
+
+· 📦 **Packets Sent**: Total packet counter  
+· 🚨 **Errors**: Connection/sending failures  
+· 🧵 **Active Threads**: Running thread count  
+· ⏱️ **Elapsed/Remaining Time**: Precise time control  
+· 📈 **Packets/Second**: Performance metric  
+
+# 🔒 Security Considerations
+
+### ⚠️ LEGAL WARNING
+
+```
+NetStorm Pro is designed EXCLUSIVELY for:
+✓ Authorized security testing
+✓ Controlled laboratory environments
+✓ Evaluation of own systems
+✓ Research and education
+
+UNAUTHORIZED USE IS ILLEGAL AND ETHICALLY WRONG.
+The developer is not responsible for misuse of this tool.
+```
+
+## 🔒 Best Practices
+
+· ✅ **Use only on own networks or with explicit authorization**  
+· ✅ **Perform tests in controlled environments**  
+· ✅ **Document all tests performed**  
+· ✅ **Respect acceptable use policies**  
+
+# 🐛 Troubleshooting
+
+### Common Errors
+
+```bash
+# Error: Cannot resolve hostname
+❌ Check DNS connectivity and target name
+
+# Error: Permission denied
+❌ Run with appropriate system permissions
+
+# Error: Invalid port
+✅ Use ports in range 1-65535
+```
+
+## ⚡ Performance Optimization
+
+· **Adjust thread count according to hardware**  
+· **Use mixed for complex stress tests**  
+· **Monitor system resource usage**  
+
+## 🤝 Contributing
+
+Contributions are welcome. Please:
+
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Support and Contact
+
+· **GitHub**: [github.com/CHICO-CP](https://github.com/CHICO-CP)  
+· **Telegram**: [@Gh0stDeveloper](https://t.me/Gh0stDeveloper)  
+· **Telegram Channel**: [Ghost Developer](https://t.me/GhostDeve)  
+· **Discord**: [Join our community](https://discord.gg/SHjF9qw9)  
+· **Developer**: Ghost Developer  
+
+## 📄 License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. See the `LICENSE` file for details.
+
+---
+
+**⚠️ IMPORTANT NOTE**: This tool should be used only for educational and testing purposes in controlled environments. Malicious use is strictly prohibited.
+
+**🔐 Responsible Security • 🎓 Continuous Education • 🔧 Professional Development**
